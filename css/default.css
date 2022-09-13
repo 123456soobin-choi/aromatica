@@ -1,0 +1,445 @@
+@media all and (min-width:1200px){
+    .mobile{
+        display: none;
+    }
+
+    .pc{
+        display: block;
+    }
+
+/* header */
+    header{
+        height: auto;
+    }
+
+    .hWrap{
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav{
+        position: unset;
+        display: block;
+        background: transparent;
+    }
+
+    .snb{
+        font-size: 12px;
+        width: auto;
+        top: 20px;
+        left: 20px;
+    }
+
+    .gnb{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .gnb>li>a{
+        padding: 0;
+        border: 0;
+        margin: 0 30px;
+        padding-bottom: 15px;
+    }
+
+    .gnb>li>a:after{
+        content: none;
+    }
+
+    .gnb>li{
+        position: relative;
+        padding-left: 0;
+    }
+
+    .btnNav{
+        display: none;
+    }
+
+    .sub{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 52px;
+        font-size: 14px;
+        z-index: 999;
+    }
+    .sub li{
+        width: 60px;
+        text-align: center;
+    }
+
+    .gnb li:first-child>.sub li{
+        width: 150px;
+    }
+
+    .gnb li:last-child>.sub li{
+        width: 120px;
+    }
+
+/* bn */
+    .bn{
+        height: 700px;
+    }
+    .bn .mobile{
+        display: none;
+    }
+
+    .bnImg{
+        display: flex;
+    }
+    
+    .bn .pc img{
+        display: block;
+    }
+
+    .pc1{
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        margin-left: -730px;
+        height: 600px;
+        /* 화면을 조절해도 같은 위치에 놓는 방법?
+        absolute 적용한 자식의 left 값을 무조건 50% 로 놓고
+        margin-left 값으로 위치 조절하기 */
+    }
+
+    .pc2{
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        margin-left: -150px;
+        height: 440px;
+    }
+    
+    .bnTxt{
+        position: absolute;
+        left: 50%;
+        top: 70px;
+        margin-left: -150px;
+        text-align: left;
+        font-size: 22px;
+        color: var(--third-color);
+    }
+
+    .bnTxt strong{
+        font-size: 28px;
+    }
+    
+    .bnTxt span{
+        font-size: 16px;
+    }
+
+/* main */
+
+section .wrap{
+    width: 1320px;
+    margin: 0 auto;
+    position: unset;
+    display: flex;
+}
+.s1{
+    padding: 100px 0;
+}
+.s1 .txt{
+    height: 200px;
+    margin-top: 80px;
+    margin-left: 40px;
+    text-align: left;
+}
+
+h2{
+    width: unset;
+    position: unset;
+    font-size: 70px;
+    line-height: 60px;
+    text-align: left;
+}
+
+.s1 h2{
+    color: #eeeecf;
+}
+
+.s1 .txt .pc{
+    font-size: 14px;
+    margin-top: 26px;
+    color: #eee;
+}
+
+.s1 .pic{
+    height: 420px;
+    padding-top: 62px;
+    border-top: 1px solid #f4f0ea;
+}
+
+.s1 .conL{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.s1 .conL img{
+    height: 100%;
+    margin-left: auto;
+}
+
+.s1 .conL p{
+    width: unset;
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    top: 84px;
+    left: 103px;
+}
+
+.s1 .conL em{
+    width: 100%;
+    font-style: normal;
+    position: absolute;
+    left: 26px;
+}
+
+.s1 .conL span{
+    display: block;
+    position: absolute;
+    top: 160px;
+    left: 270px;
+    font-size: 18px;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+
+.s2{
+    background-color: var(--third-color);
+    padding: 100px 0;
+}
+
+.s2 .wrap{
+    position: unset;
+    color: var(--main-color);
+}
+
+.s2 .conL{
+    position: relative;
+    width: 650px;
+    align-self: center;
+}
+
+
+.s2 .conL p{
+    position: absolute;
+    top: 60px;
+    /* left: 88px; */
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--third-color);
+}
+
+.s2 .conL span{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.s2 .txt{
+    margin: 50px 0 30px 88px;
+}
+
+.s2 h2{
+    color: var(--main-color);
+}
+
+.s2 .con .txt .pc{
+    font-size: 14px;
+    margin-top: 26px;
+}
+
+.s2 .item{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 88px;
+}
+
+
+.s2 .box{
+    display: block;
+    width: 580px;
+    border-bottom: 1px solid #112b23;
+    padding-bottom: 20px;
+}
+
+.s2 .box span{
+    display: block;
+    margin: 4px 0;
+}
+
+.s2 .item div:nth-child(2){
+    width: 0;
+}
+
+.s2 .item div:nth-child(3){
+    width: 300px;
+}
+
+.s2 .boxL{
+    border-left: 1px solid #112b23;
+    display: block;
+    height: 180px;
+    padding: 20px 0 0 20px;
+}
+
+.s3{
+    background: var(--secondary-color);
+    padding: 100px 0;
+    height: 700px;
+}
+
+.s2 .wrap{
+    margin-bottom: 0;
+}
+
+.s3 .wrap{
+    margin-top: 0;
+    background-position: center center;
+}
+
+.s3 .wrap a{
+    width: 100%;
+}
+
+.s3 h2{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.s3 .txt{
+    text-align: left;
+    font-size: 22px;
+    margin-left: 60px;
+}
+
+.s3 em{
+    font-size: 14px;
+    font-style: normal;
+}
+
+.s3 span{
+    right: 80px;
+    top: 70px;
+}
+
+.s3 .pic{
+    width: 900px;
+    height: 400px;
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.s4, .s5{
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.s4 .pc span{
+    font-size: 12px;
+    display: block;
+    margin-top: 30px;
+}
+
+.s4 .mobile, .s5 .mobile{
+    display: none;
+}
+
+.shower{
+    top: 3460px;
+    left: 370px;
+}
+
+.shower img{
+    height: auto;
+}
+
+.shower .hair{
+    top: 40%;
+    right: 10%;
+    transform: rotate(-45deg);
+    font-size: 60px;
+}
+
+.shower .life{
+    bottom: 0;
+    right: 10%;
+    color: var(--third-color);
+    font-size: 50px;
+}
+
+.s4 .wrap{
+    margin-left: 1620px;
+}
+
+.s5 .wrap{
+    margin-left: 1330px;
+}
+
+.s4 h3, .s5 h3{
+    margin-top: 14px;
+    font-size: 22px;
+    text-align: unset;
+}
+
+.s4 .pic .pc{
+    padding-left: 100px;
+}
+
+.s5 h2{
+    padding-top: 0;
+    color: var(--main-color);
+}
+.s5 .txt .pc{
+    font-size: 12px;
+    margin-top: 30px;
+}
+.s5 .pic .pc{
+    padding-top: 40px;
+}
+
+.s5{
+    margin-bottom: 0;
+}
+
+.s6{
+    height: 600px;
+}
+
+.pho .pc{
+    width: 450px;
+}
+
+.pho .pc{
+    font-size: 20px;
+}
+
+article p{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+article .pc{
+    font-size: 14px;
+}
+
+.sns .mobile{
+    display: none;
+}
+
+.sns .pc{
+    display: inline-block;
+    margin-left: 10px;
+}
